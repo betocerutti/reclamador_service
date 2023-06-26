@@ -37,8 +37,8 @@ Docker
 
 ## Instalación
 ```
-git clone git@github.com:betocerutti/reclamador.es.git
-cd reclamador.es
+git clone git@github.com:betocerutti/reclamador_service.git
+cd reclamador_service
 make up
 ``` 
 Opcionalmente se puede importar la base de datos generada durante el desarrollo con el siguiete comando:
