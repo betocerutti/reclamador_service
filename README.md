@@ -1,5 +1,4 @@
-
-## Propuesta
+## Propuesta 
 Para cumplir con los requisitos mencionados, propongo utilizar las siguientes tecnologías y enfoques:
 
 Lenguaje de programación: Python 3.9
@@ -30,7 +29,9 @@ A continuación, se describe una propuesta general para implementar el servicio 
     - Documentar la API utilizando herramientas como Swagger o ReDoc, para que los clientes externos puedan entender y utilizar fácilmente los endpoints.**(faltó de tiempo)**{: style:"color: red"}
     - Mantener un control de versiones del código utilizando Git y un repositorio en Github para un seguimiento adecuado de los cambios y la colaboración en el desarrollo.
 
-Esta es solo una propuesta inicial y la implementación exacta puede variar en función del tiempo disponible.
+Esta es solo una propuesta inicial y la implementación exacta puede variar en función del tiempo disponible.    
+
+# Instrucciones
 
 ## Requisitos
 Docker
@@ -45,6 +46,7 @@ Opcionalmente se puede importar la base de datos generada durante el desarrollo 
 ```
 make db-restore
 ```
+Al importar la base de datos de desarrollo ya estaría el super usuario con el que se pueden autorizar las pruebas en la documentación de swagger, además de entrar al django admin.
 
 ## Tests
 Se han realizado pruebas unitarias y pruebas de integración utilizando el cliente de Django Rest Framework
@@ -52,4 +54,12 @@ Se han realizado pruebas unitarias y pruebas de integración utilizando el clien
 make test
 ```
 
+## API docs
+Se puede probar manualmente desde la documentación interactiva en formato OpenAPI en la siguiente URL:
+```
+http://localhost:8000/swagger/
+```
+Usuario para autorizar: beto, password: 123456 (Se debe importar la base de datos para que este usuario exista, de lo contrario se debe crear un superuser)
+
+## Nota sobre Token authentication
 Por falta de tiempo las pruebas se han realizado con la clase Token de DRF en lugar de con JWT.
