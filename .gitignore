@@ -1,0 +1,25 @@
+# Django
+*.pyc
+*.pyo
+__pycache__/
+*.sqlite3
+*.env
+
+# Docker
+.dockerignore
+.docker/
+
+# Python
+venv/
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# VSCode
+.vscode/
+*.code-workspace
